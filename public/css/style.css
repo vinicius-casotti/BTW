@@ -1,0 +1,5 @@
+/* styles.css */
+@import url('custom/fonts.css');
+@import url('custom/general.css');
+@import url('components/buttons.css');
+@import url('custom/pages/helper.css');

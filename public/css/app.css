@@ -1,0 +1,10 @@
+/* app.css */
+@import url('https://cdn.jsdelivr.net/npm/tailwindcss@2.0.3/dist/tailwind.min.css'); /* CDN para o Tailwind CSS */
+
+/* Outras fontes ou arquivos CSS, se necessário */
+/* Como você não especificou o caminho de fontes no seu código, seria bom apontar para o local correto, se for necessário */
+/* Exemplo de fontes personalizadas */
+@import url('custom/fonts.css');
+@import url('custom/general.css');
+@import url('components/buttons.css');
+@import url('custom/pages/helper.css');

@@ -3,16 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- CDN (desenvolvimento, não recomendado para produção) -->
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    
+    <!-- CDN for TailwindCSS, if needed for this version -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script> <!-- Remove if not needed -->
+    <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8.4.7/swiper-bundle.min.css">
+
+
+    <link rel="stylesheet" href="{{ asset('css/app.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/icons.css') }}">
 
     <title>Betel Saúde</title>
-
-    <!-- Ícones (Lucide, se for usar) -->
-    <script src="https://unpkg.com/lucide@latest"></script>
-
-    
 </head>
 <body class="text-black bg-white">
     @include('layouts.partials.nav-dark')
@@ -21,8 +24,10 @@
 
     @include('layouts.partials.footer') 
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8.4.7/swiper-bundle.min.js"></script> <!-- Swiper JS -->
+
     <script>
-        lucide.createIcons(); // Ativa os ícones Lucide após o DOM carregar
+        lucide.createIcons(); // Initialize Lucide icons
     </script>
 </body>
 </html>

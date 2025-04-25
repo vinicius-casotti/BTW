@@ -1,0 +1,39 @@
+/*********************************/
+/*             General           */
+/*===============================*/
+
+html {
+    position: relative; /* @apply relative */
+    scroll-behavior: smooth; /* @apply scroll-smooth */
+}
+
+body {
+    font-family: 'DM Sans', sans-serif; /* @apply font-dm */
+    font-size: 15px; /* @apply text-[15px] */
+    color: black; /* @apply text-black */
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    font-family: 'DM Sans', sans-serif; /* @apply font-dm */
+    line-height: normal; /* @apply leading-normal */
+    font-weight: 600; /* @apply font-semibold */
+}
+
+p {
+    line-height: 1.625; /* @apply leading-relaxed */
+    font-family: 'DM Sans', sans-serif; /* @apply font-dm */
+}
+
+::selection {
+    background-color: #your-primary-color; /* @apply bg-primary (Substitua #your-primary-color com o valor da sua cor primaria) */
+    color: white; /* @apply text-white */
+}
+
+#toggle-count span {
+    /* Estilo para o span dentro de #toggle-count */
+}
+
+#toggle-count span [type=radio]:checked + label {
+    color: white; /* @apply text-white */
+    background-color: #your-primary-color; /* @apply bg-primary (Substitua #your-primary-color com o valor da sua cor primaria) */
+}

@@ -1,0 +1,78 @@
+/********************/
+/*     Buttons      */
+/*==================*/
+
+.btn {
+    padding-top: 0.5rem; /* py-2 */
+    padding-bottom: 0.5rem; /* py-2 */
+    padding-left: 2rem; /* px-8 */
+    padding-right: 2rem; /* px-8 */
+    display: inline-block;
+    font-weight: 500; /* font-medium */
+    letter-spacing: 0.05em; /* tracking-wide */
+    border: 1px solid #000; /* border */
+    vertical-align: middle; /* align-middle */
+    transition: all 0.5s ease-in-out; /* transition-all duration-500 ease-in-out */
+    font-size: 1rem; /* text-base */
+    text-align: center; /* text-center */
+}
+
+.btn.btn-lg {
+    padding-top: 0.625rem; /* py-2.5 */
+    padding-bottom: 0.625rem; /* py-2.5 */
+    padding-left: 1.5rem; /* px-6 */
+    padding-right: 1.5rem; /* px-6 */
+    font-size: 1.125rem; /* text-lg */
+}
+
+.btn.btn-sm {
+    padding-top: 0.3125rem; /* py-[5px] */
+    padding-bottom: 0.3125rem; /* py-[5px] */
+    padding-left: 1rem; /* px-4 */
+    padding-right: 1rem; /* px-4 */
+    font-size: 0.875rem; /* text-sm */
+}
+
+/* Button icons */
+.btn.btn-icon {
+    padding: 0;
+    height: 2.25rem; /* h-9 */
+    width: 2.25rem; /* w-9 */
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem; /* text-base */
+}
+
+.btn.btn-icon.btn-lg {
+    height: 3rem; /* h-12 */
+    width: 3rem; /* w-12 */
+}
+
+.btn.btn-icon.btn-sm {
+    height: 2rem; /* h-8 */
+    width: 2rem; /* w-8 */
+}
+
+/* Button Link */
+.btn.btn-link {
+    position: relative;
+    padding: 0;
+    border: none;
+}
+
+.btn.btn-link::after {
+    content: '';
+    position: absolute;
+    height: 1px; /* h-px */
+    width: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transition: all 0.5s; /* transition-all duration-500 */
+}
+
+.btn.btn-link:hover::after {
+    width: 100%;
+    right: auto;
+}

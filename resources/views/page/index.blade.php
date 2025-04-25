@@ -1,15 +1,12 @@
 @extends('layouts.base')
 
-@section('css')
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-@endsection
 
 @section('content')
 
 <!-- Navbar End -->
 
     <!-- Hero Start -->
-    <section class="relative pt-32 pb-32 overflow-x-hidden from-slate-500/10 bg-[url(/public/images/home/bg-1.png)] bg-no-repeat bg-cover" id="home">
+    <section class="relative pt-32 pb-32 overflow-x-hidden from-slate-500/10 bg-[{{ asset('images/home/bg-1.png') }}] bg-no-repeat bg-cover" id="home">
         <div class="container">
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6 items-center">
@@ -284,6 +281,6 @@
 @endsection
 
 @section('script_bottom')
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="{{ asset('js/swiper.js') }}"></script>
+    <script src="{{ asset('js/app.js') }}"></script>
 @endsection
